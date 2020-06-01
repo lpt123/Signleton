@@ -1,5 +1,5 @@
 #include <iostream>
-
+/*  使用静态局部变量实现 懒汉式 线程安全由c++11的特性做出保证   */
 class Signleton{
 private:
     Signleton() {
@@ -23,6 +23,6 @@ void testDemo()
 }
 int main() 
 {
-    testDemo();
+    testDemo();  // 可以发现只会打印 一次构造函数和析构函数
     return 0;
 }
